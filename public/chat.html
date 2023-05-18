@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chat IO</title>
+    <link rel="stylesheet" href="./css/style2.css" />
+    <link rel="icon" href="./chat-svgrepo-com.svg" />
+  </head>
+  <body>
+    <div class="chat">
+      <div class="header">
+        <h1>Chat IO</h1>
+        <button onclick="window.history.back()">
+          <a href="./index.html"></a> Leave room
+        </button>
+      </div>
+      <div class="view">
+        <aside>
+          <h3 class="roomName">Room name:<span id="roomName"></span></h3>
+          <div class="users">
+            <h3>Users:</h3>
+            <ul id="users"></ul>
+          </div>
+        </aside>
+
+        <main id="msgs"></main>
+      </div>
+      <div class="message">
+        <form action="" id="chat-form">
+          <input
+            autocomplete="off"
+            type="text"
+            name=""
+            id="chatBox"
+            placeholder="enter your message"
+          />
+          <button type="submit" id="send" style="width: 70px">send</button>
+        </form>
+      </div>
+    </div>
+    <div id="madeBy" style="color: aliceblue">
+      made by: <span style="color: red"> Ahmed Sherif</span>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

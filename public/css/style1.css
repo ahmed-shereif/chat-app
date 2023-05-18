@@ -1,0 +1,100 @@
+:root {
+  --backG: #e5e5e5;
+  --font: #14213d;
+  --yello: #fca311;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--font);
+}
+h1 {
+  font-family: serif;
+  margin-bottom: 20px;
+  font-weight: 900;
+  position: relative;
+  top: -20px;
+}
+
+form {
+  position: relative;
+
+  width: 500px;
+  background-color: var(--backG);
+  color: #14213d;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  padding: 20px;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+
+form > div {
+  margin-bottom: 40px;
+  color: #14213d;
+}
+/* #user {
+  width: 80%;
+} */
+label {
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #14213d;
+
+  display: block;
+}
+input[type="text"] {
+  height: 30px;
+  width: 400px;
+  margin-top: 10px;
+  font-family: sans-serif;
+  font-weight: 500;
+  color: #14213d;
+
+  font-size: 1.2rem;
+}
+#rooms {
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  height: 30px;
+  width: 400px;
+  margin-top: 10px;
+  color: #14213d;
+}
+
+#rooms option {
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #14213d;
+}
+
+input[type="submit"] {
+  margin-top: 40px;
+  background-color: #fca311;
+  width: 300px;
+  border: none;
+  height: 35px;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  color: #14213d;
+}
+@media (max-width: 600px) {
+  form {
+    width: 100%;
+  }
+}

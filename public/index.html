@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style1.css" />
+    <title>chat Io</title>
+    <link rel="icon" href="./chat-svgrepo-com.svg" />
+  </head>
+  <body>
+    <form action="chat.html">
+      <h1>Chat IO</h1>
+      <hr />
+      <div id="user">
+        <label for="username">Username</label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          required
+          oninput="this.setCustomValidity('')"
+          oninvalid="this.setCustomValidity('Enter User Name Here')"
+        />
+      </div>
+      <div>
+        <label for="rooms">Rooms</label>
+        <select name="room" id="rooms">
+          <option value="Room1">Room1</option>
+          <option value="Room2">Room2</option>
+          <option value="Room3">Room3</option>
+          <option value="Room4">Room4</option>
+        </select>
+      </div>
+
+      <input type="submit" value="Join Chat" />
+    </form>
+  </body>
+</html>
